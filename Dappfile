@@ -1,5 +1,34 @@
-name:     erc20
-version:  0
+name: erc20
+version: 0
 layout:
-  build_dir:    build
-  sol_sources:  src
+  build_dir: ./build
+  sol_sources: ./src
+description: ''
+authors: []
+license: Apache-2.0
+keywords:
+  - dapple
+dapple_version: 0.8.39
+environments:
+  develop:
+    objects:
+      coin:
+        value: '0x8d394e447f0d65da4ced961d00685a44d9803a55'
+        type: >-
+          ERC20Base[6eba101f7a8ccfc666a4d83cb5460ac8993181f92203ee652bb8d4cb5c8a0f12]
+      token:
+        value: '0x7e4a82991aaac4a118dfff49a76d4eb23beb7aa7'
+        type: >-
+          Token[b46a14681e6d44cd99123dc551a153d65b6b5431a470cc61c6243a22be32b78f]
+    type: TestRPC
+  ropsten:
+    objects:
+      coin:
+        value: '0x218e5ea7e104385b0b91097519dfde91f15613c7'
+        type: >-
+          ERC20Base[f3ed3b367772c7cf1d94a97a0965aa95ff25467d5bed8bb96f6aea988dde9137]
+      token:
+        value: '0x5017f42cf680fcbcab1093263468745c9af63e35'
+        type: >-
+          Token[f5d0a8066f79b726fa1e01e2529f091f4d9aa987ee9dba85cf97ca72ba8ba10f]
+    type: ROPSTEN
